@@ -5,7 +5,7 @@ Export database from `1_query/sbit-test.sql` @ mysql
 ![Parent Table](1_query/images/parent.png)
 ![User Table](1_query/images/user.png)
 ### How to running of number 2
-`cd 2_express`
+- `cd 2_express`
 - for development and `yarn dev` or `npm run dev`
 - for build soruce `yarn build` or `npm run build`
 - for running production `yarn start` or `npm run start`
