@@ -3,4 +3,3 @@
 ![Result](images/result.png)
 ![Parent Table](images/parent.png)
 ![User Table](images/user.png)
-live demo: [https://sbit-test.herokuapp.com/](https://sbit-test.herokuapp.com/)
