@@ -1,0 +1,15 @@
+{
+  "endpoint":[
+      {
+          "detail":"/detail/{imdbID}",
+          "example":"/detail/tt4853102"
+      },
+      {
+          "search":"/search?q={keyword}",
+          "example":"/search?q=batman"
+      }
+  ],
+  "author":"Zam Zam Saeful Bahtiar",
+  "github":"github.com/zsbahtiar",
+  "linkedin":"linkedin.com/in/zsbahtiar"
+}
