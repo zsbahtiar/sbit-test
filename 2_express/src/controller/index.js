@@ -3,7 +3,6 @@ import config from "../../config";
 import helperLogs from "../helper";
 import logModel from "../model/logModel";
 
-
 export async function searchController(req, res) {
   const {
     query: { q = "" },
@@ -15,10 +14,13 @@ export async function searchController(req, res) {
     const response = await axios.get(`${config.ENDPOINT}&s=${q}`);
     helperLogs("/search", q);
 
-    return res.send(response?.data?.Search ?? {});
+    return res.send({
+      isSuccess: true,
+      data: response?.data?.Search ?? {},
+    });
   } catch (err) {
     return res.send({
-      status: "failed",
+      isSuccess: false,
       err,
     });
   }
@@ -32,10 +34,13 @@ export async function detailController(req, res) {
     const response = await axios.get(`${config.ENDPOINT}&i=${id}`);
     helperLogs("/detail/", id);
 
-    return res.send(response?.data ?? {});
+    return res.send({
+      isSuccess: true,
+      data: response?.data ?? {},
+    });
   } catch (err) {
     return res.send({
-      status: "failed",
+      isSuccess: false,
       err,
     });
   }
@@ -45,10 +50,13 @@ export async function logController(req, res) {
   try {
     const response = await logModel().findAll();
     helperLogs("/log");
-    return res.send(response);
+    return res.send({
+      isSuccess: true,
+      data: response,
+    });
   } catch (err) {
     return res.send({
-      status: "failed",
+      isSuccess: false,
       err,
     });
   }
