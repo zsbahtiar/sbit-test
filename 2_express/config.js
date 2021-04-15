@@ -3,6 +3,7 @@ import { config } from "dotenv";
 config();
 
 export default {
+  PORT: process.env.PORT || 5000,
   ENDPOINT: process.env.ENDPOINT,
   DB_NAME: process.env.DB_NAME,
   DB_USER: process.env.DB_USER,

@@ -5,6 +5,7 @@ import {
   logController,
 } from './controller';
 import list from '../list.json';
+import config from '../config';
 
 const app = express();
 
@@ -17,7 +18,7 @@ app.get('/log', logController);
 
 
 
-app.listen(3000, () => {
+app.listen(config.PORT, () => {
   // eslint-disable-next-line no-console
-  console.log(`Express is running`);
+  console.log(`Express is running on port: ${config.PORT}`);
 })
