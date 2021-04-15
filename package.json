@@ -4,7 +4,8 @@
   "description": "SBIT-TEST by Zam Zam Saeful Bahtiar",
   "main": "index.js",
   "scripts": {
-    "3": "node 3_refactor"
+    "3": "node 3_refactor",
+    "4": "node 4_logic"
   },
   "keywords": [],
   "author": "",
