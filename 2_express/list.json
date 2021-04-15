@@ -7,6 +7,9 @@
       {
           "search":"/search?q={keyword}",
           "example":"/search?q=batman"
+      },
+      {
+        "log": "/log"
       }
   ],
   "author":"Zam Zam Saeful Bahtiar",
