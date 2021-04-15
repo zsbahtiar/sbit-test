@@ -1,6 +1,6 @@
 import Logs from "../model/logModel";
 
-export default async function helperLogs(endpoint, parameter) {
+export default async function helperLogs(endpoint, parameter='') {
   try {
     const logCreate = await Logs().create({
       endpoint,
