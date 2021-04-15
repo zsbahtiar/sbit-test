@@ -1,6 +1,7 @@
 import axios from 'axios';
 import config from '../../config';
 import helperLogs from '../helper';
+import logModel from '../model/logModel';
 
 
 export async function searchController (req, res) {
@@ -18,4 +19,10 @@ export async function detailController (req, res){
   helperLogs('/detail/', id);
 
   return res.send(response?.data?? {});
+}
+
+export async function logController(req,res) {
+  const response = await logModel().findAll();
+  
+  return res.send(response);
 }
