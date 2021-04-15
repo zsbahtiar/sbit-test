@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import Logs from "../model/logModel";
 
 export default async function helperLogs(endpoint, parameter='') {
