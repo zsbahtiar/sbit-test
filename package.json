@@ -1,0 +1,12 @@
+{
+  "name": "sbit-test",
+  "version": "1.0.0",
+  "description": "SBIT-TEST by Zam Zam Saeful Bahtiar",
+  "main": "index.js",
+  "scripts": {
+    "3": "node 3_refactor"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
