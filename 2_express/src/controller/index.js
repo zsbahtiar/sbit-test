@@ -23,6 +23,7 @@ export async function detailController (req, res){
 
 export async function logController(req,res) {
   const response = await logModel().findAll();
+  helperLogs('/log');
   
   return res.send(response);
 }
