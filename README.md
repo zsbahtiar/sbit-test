@@ -9,6 +9,7 @@ Export database from `1_query/sbit-test.sql` @ mysql
 for development and `yarn dev` or `npm run dev`
 for build soruce `yarn build` or `npm run build`
 for running production `yarn start` or `npm run start`
+live demo: [https://sbit-test.herokuapp.com/](https://sbit-test.herokuapp.com/)
 - How to running solution of number 3
 `yarn 3` or `npm run 3`
 - How to running solution of number 4
