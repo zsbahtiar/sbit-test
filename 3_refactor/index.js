@@ -28,9 +28,9 @@ function findFirstStringInBracket(str) {
 /* to this */
 
 /**
- * 
- * @param {*} str 
- * @returns 
+ *
+ * @param {*} str
+ * @returns
  */
 const findFirstStringInBracket = (str = "") => {
   if (str.length > 0) {
@@ -41,7 +41,10 @@ const findFirstStringInBracket = (str = "") => {
     for (let i = 0; i < str.length; i++) {
       if (str[i] === "(" && searchData.indexOfFirstBracket === null) {
         searchData.indexOfFirstBracket = i;
-      } else if (str[i] === ")" && searchData.indexOfCloseFirstBracket === null) {
+      } else if (
+        str[i] === ")" &&
+        searchData.indexOfCloseFirstBracket === null
+      ) {
         searchData.indexOfCloseFirstBracket = i;
         break;
       }
@@ -58,4 +61,7 @@ const findFirstStringInBracket = (str = "") => {
   return "";
 };
 
-console.log(findFirstStringInBracket("Negara (INDONESIA) itu cantik!"));
+const input = "Negara (INDONESIA) itu cantik!";
+
+console.log("FROM THIS:", input);
+console.log("TO THIS:", findFirstStringInBracket(input));
