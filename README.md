@@ -6,6 +6,7 @@ Export database from `1_query/sbit-test.sql` @ mysql
 ![User Table](1_query/images/user.png)
 ### How to running of number 2
 - `cd 2_express`
+- `cp .env.example .env` fill all env
 - `yarn install` or `npm install`
 - for development and `yarn dev` or `npm run dev`
 - for build soruce `yarn build` or `npm run build`
